@@ -288,7 +288,6 @@ fbq('track','PageView');
 var CHECKOUT_URL = "https://pay.wiapy.com/c7Q9-WLna-fq";
 document.querySelectorAll('a.cta:not(.cta-oferta)').forEach(function(a){
   a.href = CHECKOUT_URL; a.target = '_self'; a.removeAttribute('rel');
-  a.addEventListener('click', function(){ try{ fbq('track','InitiateCheckout'); }catch(e){} });
 });
 
 // Barra fixa: aparece só quando o cliente chega ao final da página
